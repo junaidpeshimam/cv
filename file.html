@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The SpeakEasy Club Inauguration</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .slide {
+            width: 960px;
+            height: 540px;
+            margin: 20px auto;
+            background: linear-gradient(135deg, #00223E, #FFA17F);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            padding: 40px;
+            box-sizing: border-box;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .slide::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="50%" y="50%" font-size="80" text-anchor="middle" dy=".35em" font-family="Arial" fill="rgba(255,255,255,0.05)">🎉</text></svg>');
+            opacity: 0.1;
+            transform: rotate(30deg);
+        }
+        .slide-title {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .slide-content {
+            font-size: 28px;
+            line-height: 1.5;
+            z-index: 1;
+            position: relative;
+        }
+        .slide-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .slide-content li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .slide-content li::before {
+            content: "🎤";
+            margin-right: 15px;
+            font-size: 32px;
+        }
+        .logo-placeholder, .qr-code-placeholder {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .logo-placeholder:hover, .qr-code-placeholder:hover {
+            transform: scale(1.1);
+        }
+        .highlight {
+            background: linear-gradient(120deg, #FFD700 0%, #FFA500 100%);
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #00223E;
+            font-weight: bold;
+        }
+        .ribbon {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            overflow: hidden;
+        }
+        .ribbon::before,
+        .ribbon::after {
+            position: absolute;
+            z-index: -1;
+            content: '';
+            display: block;
+            border: 5px solid #FFD700;
+            border-top-color: transparent;
+            border-right-color: transparent;
+        }
+        .ribbon::before {
+            top: 0;
+            left: 0;
+        }
+        .ribbon::after {
+            bottom: 0;
+            right: 0;
+        }
+        .ribbon span {
+            position: absolute;
+            display: block;
+            width: 225px;
+            padding: 15px 0;
+            background-color: #FFD700;
+            box-shadow: 0 5px 10px rgba(0,0,0,.1);
+            color: #00223E;
+            font: 700 18px/1 'Montserrat', sans-serif;
+            text-shadow: 0 1px 1px rgba(0,0,0,.2);
+            text-transform: uppercase;
+            text-align: center;
+            left: -25px;
+            top: 30px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+
+<div class="slide">
+    <div class="ribbon"><span>Grand Opening</span></div>
+    <h1 class="slide-title">Welcome to The SpeakEasy Club Inauguration</h1>
+    <div class="slide-content">
+        <p class="highlight">Elevating Communication, Empowering Voices</p>
+        <div class="logo-placeholder">Your Club's Logo</div>
+    </div>
+</div>
+
+<div class="slide">
+    <h1 class="slide-title">Celebrating Our Launch</h1>
+    <div class="slide-content">
+        <ul>
+            <li>A new hub for communication excellence</li>
+            <li>Bringing together passionate speakers</li>
+            <li>Creating a legacy of eloquence</li>
+        </ul>
+    </div>
+</div>
+
+<div class="slide">
+    <h1 class="slide-title">Our Inaugural Vision</h1>
+    <div class="slide-content">
+        <ul>
+            <li>Fostering a community of skilled orators</li>
+            <li>Bridging cultures through powerful communication</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Continue with the remaining slides following the same structure -->
+
+<div class="slide">
+    <h1 class="slide-title">Be Part of Our Journey</h1>
+    <div class="slide-content">
+        <p class="highlight">Join Us Today!</p>
+        <div class="qr-code-placeholder">Scan to Register</div>
+    </div>
+</div>
+
+<div class="slide">
+    <h1 class="slide-title">Thank You for Celebrating With Us!</h1>
+    <div class="slide-content">
+        <div class="logo-placeholder">Your Club's Logo</div>
+        <p style="text-align: center;">[Contact Information]</p>
+    </div>
+</div>
+
+</body>
+</html>
